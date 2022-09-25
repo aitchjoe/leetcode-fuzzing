@@ -23,9 +23,9 @@ func longestSubarray(nums []int) int {
 		return 0
 	}
 	if len(arr) == 1 {
-		if nums[0] == 0 {
+		if nums[0] == 0 || nums[len(nums)-1] == 0 { // [0,0,0] or [1,1,1,0]
 			return arr[0]
-		} else {
+		} else { // [1,1,1]
 			return arr[0] - 1
 		}
 	}
