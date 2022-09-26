@@ -18,6 +18,7 @@ Under each problem directory, run:
 ## Problems
 
 * [4. Median of Two Sorted Arrays](median-of-two-sorted-arrays)
+* [32. Longest Valid Parentheses](longest-valid-parentheses)
 * [65. Valid Number](valid-number)
 * [1493. Longest Subarray of 1's After Deleting One Element](longest-subarray-of-1s-after-deleting-one-element)
 
