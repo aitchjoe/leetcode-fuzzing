@@ -13,7 +13,9 @@ I have collected some source codes from Accepted Solutions Runtime Distribution 
 Under each problem directory, run:
 
 * `go test -v .`
-* `go test -fuzz=Fuzz .`
+* `go test -fuzz=Fuzz -fuzztime=55m .`
+
+Check the results in [GitHub Actions](https://github.com/aitchjoe/leetcode-fuzzing/actions).
 
 ## Problems
 
