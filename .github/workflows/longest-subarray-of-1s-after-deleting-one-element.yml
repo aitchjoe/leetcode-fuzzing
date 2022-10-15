@@ -4,13 +4,6 @@ on: workflow_dispatch
 
 jobs:
   fuzzing:
-    runs-on: ubuntu-22.04
-    steps:
-      - uses: actions/checkout@v3
-      - name: Set up Go
-        uses: actions/setup-go@v3
-        with:
-          go-version: 1.19.2
-      - name: Fuzz testing
-        run: |
-          go test -fuzz=Fuzz -fuzztime=55m ./longest-subarray-of-1s-after-deleting-one-element
+    uses: ./.github/workflows/fuzzing-workflow.yml
+    with:
+      problem: longest-subarray-of-1s-after-deleting-one-element
